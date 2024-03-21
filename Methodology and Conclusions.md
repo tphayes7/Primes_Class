@@ -236,7 +236,7 @@ So instead of making a list, we can get a decent amount of efficiency improvemen
 The loop now adds 2 on every iteration rather than 1, because we're skipping all multiples of 2.
 
 ## Primes3
-`Primes3` was tricky, because I had to figure out a way to skip both multiples of 2 and 3.  I knew if I just checked on every iteration whether or not `i` was divisible by 3, that would just mean extra mathematical checks on every iteration, and wouldn't improve efficiency.  Instead, I needed to come up with some sort of algorithmic way to know if a number was divisible by 3, without actually checked `i % 3`.  Ideally, I would find some mathematical formula to use in the iterator to make it skip multiples of 3.  First I had to figure out how much it needed to iterate:
+`Primes3` was tricky, because I had to figure out a way to skip both multiples of 2 and 3.  I knew if I just checked on every iteration whether or not `i` was divisible by 3, that would just mean extra mathematical checks on every iteration, and wouldn't improve efficiency.  Instead, I needed to come up with some sort of algorithmic way to know if a number was divisible by 3, without actually checking `i % 3`.  Ideally, I would find some mathematical formula to use in the iterator to make it skip multiples of 3.  First I had to figure out how much it needed to iterate:
 
 1. From 3 to 5 skips 2.
 2. From 5 to 7 skips 2.
