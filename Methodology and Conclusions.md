@@ -54,7 +54,7 @@ So we now have our 2 mathematical rules that we can apply to the code:
 Given the two mathematical rules I found, I knew rule #2 was going to be the tricky one.  Determining square root is easy; there's already a built in method for that.  But for the method to only check divisibility by primes, then that meant we first needed to create a list of primes.  To do this, I created a constructor for the class that would generate that list up to a hard-coded maximum value:
 
 ```
-	private static List<long> primesList;
+    private static List<long> primesList;
     private static long maxList;
     private static long maxPrime;
 
