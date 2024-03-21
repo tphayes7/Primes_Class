@@ -245,7 +245,7 @@ The loop now adds 2 on every iteration rather than 1, because we're skipping all
 5. From 13 to 17 skips 4.
 6. From 17 to 19 skips 2.
 
-So we've established a pattern of adding 2, then 4, then 2, then 4, and we have to start the loop at 5.  Unfortunately, I know of no way to have the iterator oscillate between +2 and +4 (if anyone has any ideas, please share).  What I decided to do instead was set an oscillating flag, and then when the flag was set I'd add an extra 2 to the iterator.  I knew this was an extra calculation on each iteration of the loop, but I was hoping it would still be more efficient than only skipping multiples of 2 (see Testing and Conclusions section to see how that turned out).  Here's what that looks like:
+So we've established a pattern of adding 2, then 4, then 2, then 4, and we have to start the loop at 5.  Unfortunately, I know of no way to have the iterator oscillate between +2 and +4 (if anyone has any ideas, please share).  What I decided to do instead was set an oscillating flag, and then when the flag was set I'd add an extra 2 to the iterator.  I knew this was an extra calculation on each iteration of the loop, but I was hoping it would still be more efficient than only skipping multiples of 2 (see Testing and Conclusions sections to see how that turned out).  Here's what that looks like:
 
 ```
     public static int isPrime(long toCheck)
